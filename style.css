@@ -15,6 +15,7 @@ header {
   color: white;
 }
 
+html,
 body {
   margin: 0;
   overflow-x: hidden;
@@ -60,10 +61,10 @@ nav {
   display: block;
 }
 .show .bar3 {
-  transform: rotateZ(45deg) translateY(-5px);
+  transform: rotateZ(45deg) translate(-1px, -10px);
 }
 .show .bar1 {
-  transform: rotateZ(-45deg) translateY(5px);
+  transform: rotateZ(-45deg) translate(1px, 5px);
 }
 .show .bar2 {
   opacity: 0;
