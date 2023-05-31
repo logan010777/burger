@@ -101,7 +101,7 @@ ul {
 .bg-change {
   width: 500px;
   height: 500px;
-  transform: translate(60%, -30%);
+  transform: translate(-60%, -30%);
 }
 nav a:hover {
   font-weight: bolder;
