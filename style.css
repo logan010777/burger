@@ -96,7 +96,7 @@ ul {
   transition: 0.3s ease;
   position: absolute;
   top: 40px;
-  right: 30px;
+  left: 30px;
 }
 .bg-change {
   width: 500px;
