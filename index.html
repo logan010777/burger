@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>hamburger</title>
+  </head>
+  <body>
+    <header>
+      <h1 class="site-title">burger website</h1>
+      <div class="menu">
+        <div class="bar-parent" onclick="func()" id="barline">
+          <div class="bar1 bar"></div>
+          <div class="bar2 bar"></div>
+          <div class="bar3 bar"></div>
+        </div>
+        <nav id="nav">
+          <ul>
+            <li>
+              <a href="">Home</a>
+            </li>
+            <li>
+              <a href="">About</a>
+            </li>
+            <li>
+              <a href="">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <div class="bg" id="bg"></div>
+    <script>
+      function func() {
+        document.getElementById("nav").classList.toggle("show");
+        document.getElementById("barline").classList.toggle("show");
+        document.getElementById("bg").classList.toggle("bg-change");
+      }
+    </script>
+  </body>
+</html>
