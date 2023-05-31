@@ -11,15 +11,13 @@ header {
   padding: 10px 20px;
 }
 .site-title {
-  text-align: left;
+  text-align: center;
   color: white;
 }
 
 html,
 body {
   margin: 0;
-  overflow-x: hidden;
-  max-width: 100%;
 }
 
 nav {
@@ -38,7 +36,7 @@ nav {
 .menu {
   position: absolute;
   top: 0;
-  right: 0;
+  left: 0;
 }
 .bar {
   width: 100%;
@@ -78,10 +76,10 @@ nav li a {
 }
 nav li {
   list-style: none;
-  padding: 10px 20px;
+  padding: 20px 0;
 }
 ul {
-  padding: 0;
+  padding: 0 40px;
 }
 .bg {
   width: 0;
@@ -98,12 +96,12 @@ ul {
   transition: 0.3s ease;
   position: absolute;
   top: 40px;
-  right: 30px;
+  left: 30px;
 }
 .bg-change {
   width: 500px;
   height: 500px;
-  transform: translate(60%, -30%);
+  transform: translate(-65%, -30%);
 }
 nav a:hover {
   font-weight: bolder;
