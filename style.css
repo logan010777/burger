@@ -1,3 +1,6 @@
+* {
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
 header {
   background: linear-gradient(
     to left,
@@ -24,7 +27,7 @@ nav {
   height: 40px;
   margin: 40px 20px;
   cursor: pointer;
-  transition: 0.3 ease;
+  transition: 0.3s ease;
 }
 .menu {
   z-index: 2;
