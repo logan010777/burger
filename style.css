@@ -197,6 +197,7 @@ nav a:hover {
   font-family: Arial, Helvetica, sans-serif;
   padding: 8px 16px;
   margin-top: 8px;
+  border-radius: 4px;
 }
 .article-header {
   color: rgb(171, 240, 171);
@@ -211,9 +212,13 @@ nav a:hover {
 .article-pic-container {
   display: grid;
   grid-template-columns: auto auto;
-  margin: 8px 16px;
+  margin: 8px 0;
   gap: 8px;
+}
+.article-description {
+  line-height: 1.5rem;
 }
 .article-img {
   width: 100%;
+  border-radius: 4px;
 }
