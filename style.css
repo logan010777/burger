@@ -20,6 +20,7 @@ header {
 html,
 body {
   margin: 0;
+  margin-bottom: 500px;
 }
 
 nav {
@@ -139,6 +140,8 @@ nav a:hover {
   align-items: center;
   flex-direction: column;
   border-bottom-right-radius: 8px;
+  position: sticky;
+  top: 0;
 }
 .aside-button-wrapper {
   width: 100%;
@@ -185,4 +188,32 @@ nav a:hover {
 }
 .show-aside-options .aside-button {
   margin: 0 10px;
+}
+/* main section */
+.container {
+  margin: auto;
+  width: 90%;
+  background-color: rgb(204, 159, 77);
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 8px 16px;
+  margin-top: 8px;
+}
+.article-header {
+  color: rgb(171, 240, 171);
+}
+.article-header::before {
+  content: "*";
+  vertical-align: middle;
+}
+.article-strong {
+  color: rgb(111, 111, 228);
+}
+.article-pic-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  margin: 8px 16px;
+  gap: 8px;
+}
+.article-img {
+  width: 100%;
 }
