@@ -39,63 +39,36 @@
     </header>
     <div class="bg" id="bg"></div>
     <!-- header and burger menu -->
-
-    <aside class="aside" id="aside">
-      <div class="aside-closed-wrapper" id="asideWrapper">
-        <h3>Category</h3>
+    <aside class="aside">
+      <div class="aside-button-wrapper" id="button-wrapper" onclick="aside()">
+        <div class="aside-button">
+          <div class="aside-button-left"></div>
+          <div class="aside-button-right"></div>
+        </div>
+        <h4>Categories</h4>
       </div>
-      <div class="arrow-sidebar-pack" onclick="sideFunc()">
-        <div class="arrow-sidebar-upper"></div>
-        <div class="arrow-sidebar-lower"></div>
-      </div>
-
-      <ul class="ul-nostyle" id="asideUl">
-        <li class="li-aside">
-          <a
-            href="https://embed.widencdn.net/img/beef/1akcqwmdqs/1120x840px/classic-beef-cheeseburgers-horizontal.tif?keep=c&u=7fueml"
-            class="link-aside"
-            target="_blank"
-            >Beef burger</a
-          >
-        </li>
-        <li class="li-aside">
-          <a
-            href="https://theeburgerdude.com/wp-content/uploads/2023/03/WBC-Blog-01-scaled-735x735.jpg"
-            class="link-aside"
-            target="_blank"
-            >Cheeseburger</a
-          >
-        </li>
-        <li class="li-aside">
-          <a href="" class="link-aside" target="_blank">Veggie burger</a>
-        </li>
-        <li class="li-aside">
-          <a href="" class="link-aside" target="_blank">Turkey burger</a>
-        </li>
-        <li class="li-aside">
-          <a href="" class="link-aside" target="_blank">Chicken burger</a>
-        </li>
-        <li class="li-aside">
-          <a href="" class="link-aside" target="_blank">Bison burger</a>
-        </li>
-        <li class="li-aside">
-          <a href="" class="link-aside" target="_blank">Lamb burger</a>
-        </li>
+      <ul class="aside-ul" id="aside-ul">
+        <li><a class="aside-a" href="">Cheeseburger</a></li>
+        <li><a class="aside-a" href="">Bacon Cheeseburger</a></li>
+        <li><a class="aside-a" href="">Patty Melt</a></li>
+        <li><a class="aside-a" href="">BBQ Burger</a></li>
+        <li><a class="aside-a" href="">Salmon Burger</a></li>
+        <li><a class="aside-a" href="">Blue Cheese Burger</a></li>
       </ul>
     </aside>
-    <div class="empty-space"></div>
     <script>
       function func() {
         document.getElementById("nav").classList.toggle("show");
         document.getElementById("barline").classList.toggle("show");
         document.getElementById("bg").classList.toggle("bg-change");
       }
-      function sideFunc() {
+      function aside() {
         document
-          .getElementById("asideWrapper")
-          .classList.toggle("show-aside-ul");
-        document.getElementById("asideUl").classList.toggle("show-aside-ul");
-        document.getElementById("aside").classList.toggle("show-aside-ul");
+          .getElementById("aside-ul")
+          .classList.toggle("show-aside-options");
+        document
+          .getElementById("button-wrapper")
+          .classList.toggle("show-aside-options");
       }
     </script>
   </body>
