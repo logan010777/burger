@@ -40,9 +40,16 @@
     <div class="bg" id="bg"></div>
     <!-- header and burger menu -->
 
-    <aside class="aside">
-      <h2>Category</h2>
-      <ul class="ul-nostyle">
+    <aside class="aside" id="aside">
+      <div class="aside-closed-wrapper" id="asideWrapper">
+        <h3>Category</h3>
+      </div>
+      <div class="arrow-sidebar-pack" onclick="sideFunc()">
+        <div class="arrow-sidebar-upper"></div>
+        <div class="arrow-sidebar-lower"></div>
+      </div>
+
+      <ul class="ul-nostyle" id="asideUl">
         <li class="li-aside"><a href="" class="link-aside">Beef burger</a></li>
         <li class="li-aside"><a href="" class="link-aside">Cheeseburger</a></li>
         <li class="li-aside">
@@ -64,6 +71,13 @@
         document.getElementById("nav").classList.toggle("show");
         document.getElementById("barline").classList.toggle("show");
         document.getElementById("bg").classList.toggle("bg-change");
+      }
+      function sideFunc() {
+        document
+          .getElementById("asideWrapper")
+          .classList.toggle("show-aside-ul");
+        document.getElementById("asideUl").classList.toggle("show-aside-ul");
+        document.getElementById("aside").classList.toggle("show-aside-ul");
       }
     </script>
   </body>
