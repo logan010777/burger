@@ -183,11 +183,11 @@ nav a:hover {
   display: none;
 }
 .aside.show-aside-ul {
-  width: 500px;
+  width: 50%;
 }
 .aside.show-aside-ul .arrow-sidebar-pack {
   top: 5%;
-  left: 90%;
+  left: 85%;
 }
 .aside.show-aside-ul .arrow-sidebar-upper {
   transform: rotate(135deg) translate(0, 15px);
