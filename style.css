@@ -19,7 +19,6 @@ header {
 html,
 body {
   margin: 0;
-  margin-bottom: 500px;
 }
 
 nav {
@@ -221,4 +220,91 @@ nav a:hover {
 .article-img {
   width: 100%;
   border-radius: 4px;
+}
+/* footer section */
+.footer {
+  height: 200px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: gray;
+  margin-top: 150px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #3586ff;
+  position: relative;
+}
+
+.footer-wave-parent {
+  width: 100%;
+  height: 100%;
+}
+.footer-wave {
+  background: url("https://i.ibb.co/wQZVxxk/wave.png");
+  width: 100%;
+  height: 100px;
+  background-size: 1000px 100px;
+  position: absolute;
+  top: -100px;
+  left: 0;
+}
+#footer-wave-1 {
+  opacity: 1;
+  z-index: 1000;
+  top: -100px;
+  animation: animatewave 3s linear infinite;
+}
+#footer-wave-2 {
+  opacity: 0.5;
+  z-index: 999;
+  top: -115px;
+  animation: animate 3s linear infinite;
+}
+#footer-wave-3 {
+  opacity: 0.2;
+  z-index: 1000;
+  top: -110px;
+  animation: animatewave 3s linear infinite;
+}
+#footer-wave-4 {
+  opacity: 0.7;
+  z-index: 999;
+  top: -120px;
+  animation: animate 3s linear infinite;
+}
+
+/* footer animations */
+@keyframes animatewave {
+  0% {
+    background-position-x: 1000px;
+  }
+  100% {
+    background-position-x: 0px;
+  }
+}
+@keyframes animate {
+  0% {
+    background-position-x: -1000px;
+  }
+  100% {
+    background-position-x: 0px;
+  }
+}
+/* footer info */
+.footer-info {
+  margin-bottom: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.footer-info a {
+  color: white;
+  font-size: large;
+}
+.footer-info-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
