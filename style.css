@@ -197,6 +197,7 @@ nav a:hover {
   padding: 8px 16px;
   margin-top: 8px;
   border-radius: 4px;
+  box-shadow: 4px 4px 2px rgb(170, 169, 169);
 }
 .article-header {
   color: rgb(171, 240, 171);
