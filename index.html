@@ -207,6 +207,73 @@
       </article>
     </main>
 
+    <!-- code testing section -->
+    <div class="container">
+      <ul>
+        <li>css</li>
+        <li>html</li>
+        <li>js</li>
+        <li>php</li>
+      </ul>
+      <div class="table-overflow">
+        <table>
+          <tr>
+            <th>name</th>
+            <th>phone number</th>
+            <th>address</th>
+            <th>points</th>
+            <th>points</th>
+            <th>points</th>
+            <th>points</th>
+            <th>points</th>
+            <th>points</th>
+          </tr>
+          <tr>
+            <td>mahdi</td>
+            <td>09934569090</td>
+            <td>gilan</td>
+            <td>90</td>
+            <td>90</td>
+            <td>90</td>
+            <td>90</td>
+            <td>90</td>
+            <td>90</td>
+          </tr>
+          <tr>
+            <td>sadegh</td>
+            <td>09195558383</td>
+            <td>esfehan</td>
+            <td>80</td>
+            <td>80</td>
+            <td>80</td>
+            <td>80</td>
+            <td>80</td>
+            <td>80</td>
+          </tr>
+          <tr>
+            <td>ali</td>
+            <td>09198763452</td>
+            <td>tabriz</td>
+            <td>50</td>
+            <td>50</td>
+            <td>50</td>
+            <td>50</td>
+            <td>50</td>
+            <td>50</td>
+          </tr>
+        </table>
+      </div>
+      <section class="card" id="card">
+        <h3>Visibility : Visible</h3>
+        <img
+          src="https://yt3.googleusercontent.com/cAxYWAR5GsbYphyuO-9ObBFJ75E5X5Uy-45T0hS1DrY0CUxX_VG5jy-IA6NzGxzvI4609nVfGw=s900-c-k-c0x00ffffff-no-rj"
+          alt="freepic logo banner"
+          style="width: 50%"
+        />
+      </section>
+      <button onclick="button()" id="button">Hide the card</button>
+    </div>
+
     <!-- Fotter -->
 
     <footer class="footer">
@@ -241,6 +308,17 @@
         document
           .getElementById("button-wrapper")
           .classList.toggle("show-aside-options");
+      }
+
+      function button() {
+        let card = document.getElementById("card");
+        card.classList.toggle("change-state");
+        const button = document.getElementById("button");
+        if (button.innerText == "Hide the card") {
+          button.innerText = "Show the card";
+        } else {
+          button.innerText = "Hide the card";
+        }
       }
     </script>
   </body>

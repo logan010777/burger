@@ -308,3 +308,81 @@ nav a:hover {
   justify-content: center;
   align-items: center;
 }
+
+/* code testing section */
+
+.container ul {
+  list-style-image: linear-gradient(
+    to bottom,
+    rgb(77, 76, 76) 50%,
+    rgb(243, 49, 49)
+  );
+  list-style-position: outside;
+}
+
+table,
+th,
+td {
+  border: 1px solid gray;
+  padding: 5px;
+  margin: 5px;
+  background-color: aliceblue;
+}
+table {
+  width: 100%;
+  text-align: center;
+  border-collapse: collapse;
+  border-radius: 8px;
+  overflow-x: scroll;
+}
+td {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: rgba(169, 169, 169, 0.76);
+  vertical-align: bottom;
+  margin-bottom: 0;
+  padding-bottom: 5px;
+  padding-top: 20px;
+}
+
+td:nth-child(2) {
+  background-color: #3586ff96;
+}
+th:nth-child(2) {
+  background-color: rgba(0, 68, 255, 0.596);
+}
+th {
+  background-color: rgba(255, 105, 180, 0.829);
+}
+.table-overflow {
+  overflow-x: auto;
+}
+.card {
+  max-width: 400px;
+  margin: 3rem auto 2rem;
+  background-color: mediumpurple;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 8px;
+  box-shadow: 2px 2px 4px rgb(90, 19, 90);
+  padding: 2rem 1rem;
+}
+button {
+  margin: auto;
+  padding: 1rem 0.5rem;
+  border: 1px solid rgb(70, 69, 69);
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: rgb(86, 22, 190);
+  color: aliceblue;
+  display: block;
+  font-size: larger;
+  width: 200px;
+}
+button:hover {
+  background-color: rgba(86, 22, 190, 0.555);
+}
+.change-state {
+  visibility: hidden;
+}
