@@ -35,13 +35,12 @@ nav {
   cursor: pointer;
   transition: 0.3s ease;
 }
-.menu {
-  z-index: 2;
-}
+
 .menu {
   position: absolute;
   top: 0;
   left: 0;
+  z-index: 104;
 }
 .bar {
   width: 100%;
@@ -96,7 +95,7 @@ ul {
     rgb(171, 240, 171)
   );
   border-radius: 50%;
-  z-index: 1;
+  z-index: 102;
   opacity: 0.7;
   transition: 0.3s ease;
   position: absolute;
