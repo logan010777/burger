@@ -13,6 +13,7 @@ header {
   display: flex;
   justify-content: center;
 }
+
 .site-title {
   text-align: center;
   color: white;
@@ -122,6 +123,7 @@ nav a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
+  max-width: 200px;
 }
 /* header and burger menu */
 .aside-button {
