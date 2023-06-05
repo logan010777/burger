@@ -80,10 +80,10 @@
   width: 0;
   height: 2px;
 }
-.button3 span:hover::before {
+.button3:hover span::before {
   height: 100%;
 }
-.button3 span:hover::after {
+.button3:hover span::after {
   width: 100%;
 }
 .button3 span {
