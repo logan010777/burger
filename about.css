@@ -69,8 +69,8 @@
   background-color: rgb(236, 96, 53);
   transition: all 0.3s ease;
   position: absolute;
-  bottom: 10px;
-  left: -5px;
+  bottom: 0;
+  left: 0;
 }
 .button3 span::before {
   width: 2px;
@@ -86,9 +86,41 @@
 .button3:hover span::after {
   width: 100%;
 }
-.button3 span {
+
+/* button 4 */
+
+.button4 {
+  background: linear-gradient(0deg, hotpink, rgba(255, 105, 180, 0.705));
   position: relative;
-  display: block;
-  width: 180px;
-  height: 40px;
+}
+.button4:hover {
+  background: transparent;
+  color: deeppink;
+  box-shadow: none;
+}
+.button4::before {
+  content: "";
+  width: 0;
+  height: 2px;
+  background-color: deeppink;
+  position: absolute;
+  top: 0;
+  right: 0;
+  transition: all 400ms ease-in;
+}
+.button4:hover::before {
+  width: 100%;
+}
+.button4 span::after {
+  content: "";
+  height: 2px;
+  width: 0;
+  background-color: deeppink;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: all 400ms ease-in;
+}
+.button4:hover span::after {
+  width: 100%;
 }
