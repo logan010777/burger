@@ -141,7 +141,7 @@
 .button5:hover {
   box-shadow: none;
   background: transparent;
-  color: rgb(41, 128, 0);
+  color: #e8edea;
 }
 
 .button5::before,

@@ -24,7 +24,7 @@ particlesJS(
         },
       },
       color: {
-        value: "#4287f5",
+        value: "#fff",
       },
       shape: {
         type: "star",
