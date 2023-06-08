@@ -59,14 +59,15 @@ nav {
   background-color: rgb(221, 130, 94);
   transform: translateY(5px);
 }
+
 .show {
   display: block;
 }
 .show .bar3 {
-  transform: rotateZ(45deg) translate(-1px, -10px);
+  transform: rotateZ(45deg) translateX(-4px);
 }
 .show .bar1 {
-  transform: rotateZ(-45deg) translate(1px, 5px);
+  transform: rotateZ(-45deg) translate(-9px, 3px);
 }
 .show .bar2 {
   opacity: 0;
